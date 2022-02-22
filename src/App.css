@@ -1,38 +1,217 @@
-.App {
-  text-align: center;
+
+.body{
+background-color: orange;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.keyBoard{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+        "displayAnswer displayAnswer displayAnswer displayAnswer" 
+        "allClear posNeg percent div"
+        "seven eight nine mult"
+        "four five six subtract"
+        "one two three add"
+        "zero zero decPoint equal"
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#displayAnswer {
+  height: 51px;
+  grid-area: displayAnswer;
+  background-color:  black;
   color: white;
+  padding-right: 10px;
+  font-size: 45px;
+  text-align: right;
+  border: solid black 1px;
+  
+  
+    
 }
 
-.App-link {
-  color: #61dafb;
+  #allClear {
+    grid-area: allClear;
+    background-color: dimgray;
+    color: white;
+    font-size: 20px;
+      
+  }
+  
+  #posNeg {
+    grid-area: posNeg;
+    background-color: dimgray;
+    color: white;
+    font-size: 25px;
+     
+  }
+  
+  #percent {
+    grid-area: percent;
+    background-color: dimgray;
+    color: white;
+    font-size: 20px;
+    
+  }
+  
+  #div {
+    grid-area: div;
+    background-color: orange;
+    color: white;
+    font-size: 30px;
+    
+    
+  }
+  
+  #seven {
+    grid-area: seven;
+    background-color: gray;
+    color: white;
+    font-size: 25px;
+  }
+
+  #eight {
+    grid-area: eight;
+    background-color: grey;
+    color: white;
+    font-size: 25px;
+  }
+
+  #nine {
+    grid-area: nine;
+    background-color: gray;
+    color: white;
+    font-size: 25px;
+  }
+
+  #mult {
+    grid-area: mult;
+    background-color: orange;
+    color: white;
+    font-size: 25px;
+  }
+
+  #four {
+    grid-area: four;
+    background-color: gray;
+    color: white;
+    font-size: 25px;
+  }
+
+  #five {
+    grid-area: five;
+    background-color: gray;
+    color: white;
+    font-size: 25px;
+  }
+
+  #six {
+    grid-area: six;
+    background-color: gray;
+    color: white;
+    font-size: 25px;
+  }
+
+  #subtract {
+    grid-area: subtract;
+    background-color: orange;
+    color: white;
+    font-size: 40px;
+  }
+
+  #one {
+    grid-area: one;
+    background-color: gray;
+    color: white;
+    font-size: 25px;
+  }
+
+  #two {
+    grid-area: two;
+    background-color: gray;
+    color: white;
+    font-size: 25px;
+  }
+
+  #three {
+    grid-area: three;
+    background-color: gray;
+    color: white;
+    font-size: 25px;
+  }
+
+  #add {
+    grid-area: add;
+    background-color: orange;
+    color: white;
+    font-size: 30px;
+  }
+
+  #zero {
+    grid-area: zero;
+    background-color: gray;
+    color: white;
+    font-size: 25px;
+  }
+
+  #decPoint {
+    grid-area: decPoint;
+    background-color: gray;
+    color: white;
+    font-size: 35px;
+  }
+
+  #equal {
+    grid-area: equal;
+    background-color: orange;
+    color: white;
+    font-size: 25px;
+  } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .body{
+  background-color: orange;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#displayAnswer{
+  height: 40px;
+  background-color:  black;
+  color: white;
+  padding-right: 10px;
+  font-size: 45px;
+  text-align: right;
+  border: solid black 1px;
+  padding: 10px;
+  margin: 5px 0;
+  
+} 
+
+ .keyBoard{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  margin: 5px auto;
 }
+
+.keyBoard{
+  text-align: center;
+  border: solid black 1px;
+  cursor: pointer;
+  padding: 3px;
+}  */
+
