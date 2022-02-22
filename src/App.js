@@ -9,15 +9,14 @@ class App extends Component {
        displayNum: '',
        operation: '',
        numA: '',
-       numB: '',
-    
+       numB: ''
     }
   }
 
   handleClickPad = (evnt) => {
      this.setState({ 
       displayNum:this.state.displayNum + evnt.target.value, 
-      numA: this.state.displayNum + evnt.target.value, 
+      numA: this.state.displayNum + evnt.target.value 
 
     })
   }
@@ -26,15 +25,14 @@ class App extends Component {
    this.setState({
      operation: evnt.target.value,
      numB: this.state.numA,
-     displayNum: '',
+     displayNum: ''
     })
   } 
 
   handleAllClear = () => {
     this.setState({
       displayNum: '',
-      operation: '',
-      answer: 0
+      operation: ''
     })
  }
  
@@ -46,13 +44,12 @@ class App extends Component {
  
  handlePercent = () => {
   this.setState ({
-     answer: Math.round(this.state.displayNum) / 100
+    displayNum: Math.round(this.state.displayNum) / 100
 
      })
  }
 
 handleProcess = () => {
-  let amtTotl= 0; 
   if (this.state.operation === '/'){
     this.setState({
       displayNum: Math.round(Number(this.state.numB) / Number(this.state.numA))

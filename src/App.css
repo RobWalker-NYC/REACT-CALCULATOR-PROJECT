@@ -1,8 +1,4 @@
 
-.body{
-background-color: orange;
-}
-
 .keyBoard{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -169,49 +165,4 @@ background-color: orange;
     font-size: 25px;
   } 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .body{
-  background-color: orange;
-}
-
-#displayAnswer{
-  height: 40px;
-  background-color:  black;
-  color: white;
-  padding-right: 10px;
-  font-size: 45px;
-  text-align: right;
-  border: solid black 1px;
-  padding: 10px;
-  margin: 5px 0;
   
-} 
-
- .keyBoard{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
-  margin: 5px auto;
-}
-
-.keyBoard{
-  text-align: center;
-  border: solid black 1px;
-  cursor: pointer;
-  padding: 3px;
-}  */
-
